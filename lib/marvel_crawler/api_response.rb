@@ -26,8 +26,6 @@ module MarvelCrawler
           @total = @response['data']['total']
           @count = @response['data']['count']
           @message = 'Success'
-        when 304
-          @message = 'Not Modified'
         else
           @message = "Error: #{@response['status']}"
       end
